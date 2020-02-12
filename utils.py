@@ -57,6 +57,9 @@ class Utils:
 
     @staticmethod
     def test_sqlalchemy_core(db_url,n=10):
+        """
+            inserts 10000 records 1.1002159118652344 secs
+        """
         try:
             Utils.init_sqlalchemy(dbname=db_url)
             t0 = time.time()
